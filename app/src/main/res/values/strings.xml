@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tomat</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="desc_pg2">Cari material berdasarkan Plant, Item Name, Group Class, INC, Stock Number, Manufacture Code, atau Equipment Code</string>
+    <string name="desc_pg1">Cari material berdasarkan material number, old number, deskripsi, atau PO Text (Spesifikasi)</string>
+</resources>

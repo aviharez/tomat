@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/logo_pkc"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo_pi"
+        android:layout_margin="16dp"
+        android:layout_alignParentRight="true"/>
+
+    <ImageView
+        android:layout_width="288dp"
+        android:layout_height="464dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_login_lama" />
+
+    <!--<ImageView-->
+        <!--android:layout_width="302dp"-->
+        <!--android:layout_height="189dp"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="64dp"-->
+        <!--android:src="@drawable/logo_with_text" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <customfonts.MyTextView_Montserrat_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="12sp"
+            android:textColor="#747474"/>
+
+        <customfonts.EditText__SF_Pro_Display_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_username"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:inputType="text"
+            android:textColor="@android:color/black"/>
+
+        <customfonts.MyTextView_Montserrat_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:textColor="#747474"/>
+
+        <customfonts.EditText__SF_Pro_Display_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="8dp"
+
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_grey"
+            android:textColor="@android:color/black"/>
+
+        <customfonts.Button_Roboto_Medium
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded"
+            android:layout_marginTop="24dp"
+            android:elevation="0dp"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/bt_login"
+            android:text="Sign In"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameFragment"
+        android:layout_above="@id/bottomNavigation" />
+
+    <com.etebarian.meowbottomnavigation.MeowBottomNavigation
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:mbn_backgroundBottomColor="#fc5a44"
+        app:mbn_defaultIconColor="#E7E7E7"
+        app:mbn_rippleColor="#2f424242"
+        app:mbn_selectedIconColor="#ffffff"
+        app:mbn_shadowColor="#1f212121" />
+
+    <!--<com.etebarian.meowbottomnavigation.MeowBottomNavigation-->
+    <!--android:id="@+id/bottomNavigation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--app:mbn_backgroundBottomColor="#ffffff"-->
+    <!--app:mbn_countBackgroundColor="#ff6f00"-->
+    <!--app:mbn_countTextColor="#ffffff"-->
+    <!--app:mbn_countTypeface="fonts/SourceSansPro-Regular.ttf"-->
+    <!--app:mbn_defaultIconColor="#90a4ae"-->
+    <!--app:mbn_rippleColor="#2f424242"-->
+    <!--app:mbn_selectedIconColor="#3c415e"-->
+    <!--app:mbn_shadowColor="#1f212121" />-->
+
+</RelativeLayout>

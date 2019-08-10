@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".fragment.TomatFragment">
+
+    <customfonts.MyTextView_SF_Pro_Display_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomat"
+        android:layout_margin="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:id="@+id/jdl"
+        android:textColor="#3b3b3b"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jdl"
+        android:layout_marginTop="16dp"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Montserrat_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Material No."
+                        android:textSize="12sp"
+                        android:textColor="#747474"/>
+
+                    <customfonts.EditText__SF_Pro_Display_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_material_no"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_grey"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:inputType="text"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@android:color/black"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Montserrat_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Old No."
+                        android:textSize="12sp"
+                        android:textColor="#747474"/>
+
+                    <customfonts.EditText__SF_Pro_Display_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/et_old_no"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_grey"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:inputType="text"
+                        android:layout_marginBottom="16dp"
+                        android:textColor="@android:color/black"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <customfonts.MyTextView_Montserrat_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PO Text"
+                android:textSize="12sp"
+                android:textColor="#747474"/>
+
+            <customfonts.EditText__SF_Pro_Display_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_po_text"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_grey"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/black"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <customfonts.MyTextView_Montserrat_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textSize="12sp"
+                android:textColor="#747474"/>
+
+            <customfonts.EditText__SF_Pro_Display_Regular
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_deskripsi"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rounded_grey"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:inputType="text"
+                android:layout_marginBottom="16dp"
+                android:textColor="@android:color/black"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <customfonts.MyTextView_Montserrat_Regular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plant"
+                android:textSize="12sp"
+                android:textColor="#747474"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp">
+
+            </Spinner>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ketersediaan Stok"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <customfonts.Button_Roboto_Medium
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:elevation="0dp"
+                android:id="@+id/bt_search_tomat"
+                android:text="Cari"/>
+
+        </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
