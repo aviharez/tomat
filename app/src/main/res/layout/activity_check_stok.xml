@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.CheckStokActivity">
+
+    <customfonts.MyTextView_SF_Pro_Display_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stock Overview"
+        android:layout_margin="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:id="@+id/jdl"
+        android:textColor="#3b3b3b"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="9dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@id/jdl"
+        android:id="@+id/main"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_gravity="center"
+                android:src="@drawable/rounded_list"/>
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000017"
+                android:layout_gravity="center"
+                android:textSize="12.5sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plant"
+                        android:textSize="12sp"
+                        android:textColor="#818181"/>
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C601"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BUn"
+                        android:textSize="12sp"
+                        android:textColor="#818181"/>
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TON"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last Update"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#818181"/>
+
+            <customfonts.MyTextView_SF_Pro_Display_Medium
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-08-09 13:52:32"
+                android:textColor="#3b3b3b"
+                android:textSize="13sp"/>
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="#818181"/>
+
+            <customfonts.MyTextView_SF_Pro_Display_Medium
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolot sit amet"
+                android:textColor="#3b3b3b"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/main"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:id="@+id/v"
+        android:background="#33979797"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/v">
+
+        <LinearLayout
+            android:background="@drawable/rounded_4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="9dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/status_mark"
+                    android:tint="#03A9F4"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SLoc"
+                        android:textSize="12sp"
+                        android:textColor="#818181"/>
+
+                        <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3L07"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                        android:layout_width="0dp"
+                            android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity"
+                        android:textSize="12sp"
+                        android:textColor="#818181"/>
+
+                        <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="19700"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                        </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--<customfonts.TextViewSFProDisplayRegular-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="SLoc"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:textColor="#818181"/>-->
+
+                        <!--<customfonts.MyTextView_SF_Pro_Display_Medium-->
+                            <!--android:layout_marginTop="4dp"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="3L07"-->
+                            <!--android:textColor="#3b3b3b"-->
+                            <!--android:textSize="13sp"/>-->
+
+                        <!--<customfonts.TextViewSFProDisplayRegular-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="Quantity"-->
+                            <!--android:textSize="12sp"-->
+                            <!--android:layout_marginTop="8dp"-->
+                            <!--android:textColor="#818181"/>-->
+
+                        <!--<customfonts.MyTextView_SF_Pro_Display_Medium-->
+                            <!--android:layout_marginTop="4dp"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text="19700"-->
+                            <!--android:textColor="#3b3b3b"-->
+                            <!--android:textSize="13sp"/>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/rounded_4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="9dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="6dp"
+                    android:layout_height="50dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/status_mark"
+                    android:tint="#8BC34A"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <customfonts.TextViewSFProDisplayRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="SLoc"
+                                    android:textSize="12sp"
+                                    android:textColor="#818181"/>
+
+                                <customfonts.MyTextView_SF_Pro_Display_Medium
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3L07"
+                                    android:textColor="#3b3b3b"
+                                    android:textSize="13sp"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <customfonts.TextViewSFProDisplayRegular
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Quantity"
+                                    android:textSize="12sp"
+                                    android:textColor="#818181"/>
+
+                                <customfonts.MyTextView_SF_Pro_Display_Medium
+                                    android:layout_marginTop="4dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="19700"
+                                    android:textColor="#3b3b3b"
+                                    android:textSize="13sp"/>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <!--<customfonts.TextViewSFProDisplayRegular-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="SLoc"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:textColor="#818181"/>-->
+
+                        <!--<customfonts.MyTextView_SF_Pro_Display_Medium-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="3L07"-->
+                        <!--android:textColor="#3b3b3b"-->
+                        <!--android:textSize="13sp"/>-->
+
+                        <!--<customfonts.TextViewSFProDisplayRegular-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Quantity"-->
+                        <!--android:textSize="12sp"-->
+                        <!--android:layout_marginTop="8dp"-->
+                        <!--android:textColor="#818181"/>-->
+
+                        <!--<customfonts.MyTextView_SF_Pro_Display_Medium-->
+                        <!--android:layout_marginTop="4dp"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="19700"-->
+                        <!--android:textColor="#3b3b3b"-->
+                        <!--android:textSize="13sp"/>-->
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

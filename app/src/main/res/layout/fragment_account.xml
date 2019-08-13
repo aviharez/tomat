@@ -5,14 +5,216 @@
     android:layout_height="match_parent"
     tools:context=".fragment.AccountFragment">
 
-    <customfonts.MyTextView_SF_Pro_Display_Bold
-        android:layout_width="wrap_content"
+    <!--<customfonts.MyTextView_SF_Pro_Display_Bold-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Pengaturan Akun"-->
+        <!--android:layout_margin="16dp"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:textSize="28sp"-->
+        <!--android:id="@+id/jdl"-->
+        <!--android:textColor="#3b3b3b"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pengaturan Akun"
-        android:layout_margin="16dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:textSize="24sp"
-        android:textColor="#3b3b3b"/>
+        android:focusableInTouchMode="true"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_marginTop="32dp"
+            android:layout_width="85dp"
+            android:layout_height="95.7dp"
+            android:src="@drawable/logo_pkc" />
+
+        <customfonts.MyTextView_SF_Pro_Display_Bold
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Namanya"
+            android:textColor="#3b3b3b"
+            android:textSize="20sp"/>
+
+        <customfonts.MyTextView_SF_Pro_Display_Medium
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keterangan"
+            android:textColor="#a9a9b0"
+            android:textSize="14sp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:background="#33979797"/>
+
+
+
+
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="2.5dp"-->
+        <!--android:background="@drawable/shadow"/>-->
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/bt_change_pass"
+                android:padding="13dp">
+
+                <ImageView
+                    android:id="@+id/inbox1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:tint="#a9a0b0"
+                    android:src="@drawable/ic_settings_black_24dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:layout_marginLeft="20dp">
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:id="@+id/txttrades1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#3b3b3b"
+                        android:text="Ubah Password"/>
+
+                    <ImageView
+                        android:id="@+id/arrow1"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_right_black_24dp"
+                        android:layout_gravity="right"
+                        android:tint="#a9a0b0"
+                        android:layout_marginTop="-14dp"
+                        android:layout_marginBottom="-3dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/txthistory1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="#a9a9b0"
+                        android:text="Atur passwordmu di sini" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#1A979797"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/logout"
+                android:padding="13dp">
+
+                <ImageView
+                    android:id="@+id/inbox"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:tint="#a9a0b0"
+                    android:src="@drawable/ic_exit_to_app_black_24dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:layout_marginLeft="20dp">
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:id="@+id/txttrades"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="#3b3b3b"
+                        android:text="Log out"/>
+
+                    <ImageView
+                        android:id="@+id/arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_chevron_right_black_24dp"
+                        android:layout_gravity="right"
+                        android:tint="#a9a0b0"
+                        android:layout_marginTop="-14dp"
+                        android:layout_marginBottom="-3dp"
+                        android:layout_marginRight="10dp"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/txthistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="11sp"
+                        android:textColor="#a9a9b0"
+                        android:text="Tinggalkan akun untuk masuk dengan akun lain" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="#1A979797"/>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 </RelativeLayout>

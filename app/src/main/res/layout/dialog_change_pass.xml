@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="500dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="259dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_auth" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_close"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_close_black_24dp"
+        android:background="@android:color/transparent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:layout_above="@id/bt_update">
+
+        <customfonts.MyTextView_Montserrat_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Password"
+            android:textSize="11sp"
+            android:textColor="#747474"/>
+
+        <customfonts.EditText__SF_Pro_Display_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_username"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_grey"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"/>
+
+        <customfonts.MyTextView_Montserrat_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Password"
+            android:layout_marginTop="8dp"
+            android:textSize="11sp"
+            android:textColor="#747474"/>
+
+        <customfonts.EditText__SF_Pro_Display_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/et_password"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="4dp"
+
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_grey"
+            android:textColor="@android:color/black"/>
+
+        <customfonts.MyTextView_Montserrat_Regular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm New Password"
+            android:layout_marginTop="8dp"
+            android:textSize="11sp"
+            android:textColor="#747474"/>
+
+        <customfonts.EditText__SF_Pro_Display_Regular
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword"
+            android:background="@drawable/rounded_grey"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+    <customfonts.Button_Roboto_Medium
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:elevation="0dp"
+        android:id="@+id/bt_update"
+        android:text="Update"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import androidx.annotation.Nullable;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 import com.aviharez.tomatapp.R;
 import com.aviharez.tomatapp.fragment.SampleSlide;
@@ -64,4 +65,5 @@ public class IntroActivity extends AppIntro {
         super.onSlideChanged(oldFragment, newFragment);
         // Do something when the slide changes.
     }
+
 }

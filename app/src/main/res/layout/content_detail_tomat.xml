@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear"
+    android:background="@drawable/rect_white_border"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="9dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:src="@drawable/rounded_list"/>
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4000151"
+            android:layout_gravity="center"
+            android:textSize="12.5sp"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:id="@+id/tv_tenant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plant"
+            android:textSize="12sp"
+            android:textColor="#818181"/>
+
+        <customfonts.MyTextView_SF_Pro_Display_Medium
+            android:id="@+id/tv_income"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C601"
+            android:textColor="#3b3b3b"
+            android:textSize="13sp"/>
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Old Number"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#818181"/>
+
+        <customfonts.MyTextView_SF_Pro_Display_Medium
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1234-56789-4321"
+            android:textColor="#3b3b3b"
+            android:textSize="13sp"/>
+
+        <customfonts.TextViewSFProDisplayRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#818181"/>
+
+        <customfonts.MyTextView_SF_Pro_Display_Medium
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolot sit amet"
+            android:textColor="#3b3b3b"
+            android:textSize="13sp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

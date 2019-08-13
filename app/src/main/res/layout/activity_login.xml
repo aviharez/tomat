@@ -22,10 +22,11 @@
         android:layout_alignParentRight="true"/>
 
     <ImageView
-        android:layout_width="288dp"
-        android:layout_height="464dp"
+        android:layout_width="271dp"
+        android:layout_height="279dp"
+        android:layout_marginTop="64dp"
         android:layout_centerHorizontal="true"
-        android:src="@drawable/ic_login_lama" />
+        android:src="@drawable/ic_login_logo" />
 
     <!--<ImageView-->
         <!--android:layout_width="302dp"-->

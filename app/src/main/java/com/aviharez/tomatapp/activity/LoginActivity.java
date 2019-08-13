@@ -34,7 +34,6 @@ public class LoginActivity extends AppCompatActivity {
                     public void run() {
                         Intent i = new Intent(LoginActivity.this, MainActivity.class);
                         startActivity(i);
-                        finish();
                         hideDialog();
                     }
                 }, 2500);

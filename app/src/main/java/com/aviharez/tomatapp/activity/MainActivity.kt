@@ -4,6 +4,7 @@ import android.graphics.Typeface
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.aviharez.tomatapp.R
 import com.aviharez.tomatapp.fragment.AccountFragment
 import com.aviharez.tomatapp.fragment.SmartCatFragment
@@ -17,8 +18,9 @@ class MainActivity : AppCompatActivity() {
         private const val ID_TOMAT = 1
         private const val ID_SC = 2
         private const val ID_CONFIG = 3
-//        private const val ID_NOTIFICATION = 4
-//        private const val ID_ACCOUNT = 5
+        init {
+            AppCompatDelegate.setCompatVectorFromResourcesEnabled(true)
+        }
     }
 
 //    @SuppressLint("NewApi")
@@ -41,8 +43,8 @@ class MainActivity : AppCompatActivity() {
 
         //tv_selected.typeface = Typeface.createFromAsset(assets, "fonts/SourceSansPro-Regular.ttf")
 
-        bottomNavigation.add(MeowBottomNavigation.Model(ID_TOMAT, R.drawable.ic_home))
-        bottomNavigation.add(MeowBottomNavigation.Model(ID_SC, R.drawable.ic_explore))
+        bottomNavigation.add(MeowBottomNavigation.Model(ID_TOMAT, R.drawable.ic_tomat))
+        bottomNavigation.add(MeowBottomNavigation.Model(ID_SC, R.drawable.ic_sc))
         bottomNavigation.add(MeowBottomNavigation.Model(ID_CONFIG, R.drawable.ic_account))
 //        bottomNavigation.add(MeowBottomNavigation.Model(ID_NOTIFICATION, R.drawable.ic_notification))
 //        bottomNavigation.add(MeowBottomNavigation.Model(ID_ACCOUNT, R.drawable.ic_account))
