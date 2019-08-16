@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
     tools:context=".fragment.SmartCatFragment">
 
     <customfonts.MyTextView_SF_Pro_Display_Bold
@@ -19,14 +20,15 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_below="@id/jdl"
         android:layout_marginTop="8dp"
-        android:padding="16dp">
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="16dp"
             android:orientation="vertical">
 
             <customfonts.MyTextView_Montserrat_Regular
@@ -37,11 +39,12 @@
                 android:textColor="#747474"/>
 
             <org.angmarch.views.NiceSpinner
-                android:id="@+id/nice_spinner1"
+                android:id="@+id/spinnerPlant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:popupTextAlignment="start"
+                android:foreground="@drawable/rounded_trans"
                 android:background="@android:color/black"
                 android:layout_marginBottom="16dp"/>
 
@@ -69,7 +72,7 @@
                     <customfonts.EditText__SF_Pro_Display_Regular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/et_material_no"
+                        android:id="@+id/new_stock_code"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/rounded_grey"
                         android:paddingTop="8dp"
@@ -101,7 +104,7 @@
                     <customfonts.EditText__SF_Pro_Display_Regular
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:id="@+id/et_old_no"
+                        android:id="@+id/old_stock_code"
                         android:layout_marginTop="8dp"
                         android:background="@drawable/rounded_grey"
                         android:paddingTop="8dp"
@@ -125,12 +128,17 @@
                 android:textSize="12sp"
                 android:textColor="#747474"/>
 
-            <org.angmarch.views.NiceSpinner
-                android:id="@+id/nice_spinner2"
+            <com.aviharez.tomatapp.activity.SearchableSpinner
+                android:id="@+id/spinner_inc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:popupTextAlignment="start"
+                android:foreground="@drawable/rounded_trans"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
                 android:layout_marginBottom="16dp"/>
 
             <customfonts.MyTextView_Montserrat_Regular
@@ -140,12 +148,17 @@
                 android:textSize="12sp"
                 android:textColor="#747474"/>
 
-            <org.angmarch.views.NiceSpinner
-                android:id="@+id/nice_spinner3"
+            <com.aviharez.tomatapp.activity.SearchableSpinner
+                android:id="@+id/spinner_ncs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:popupTextAlignment="start"
+                android:foreground="@drawable/rounded_trans"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
                 android:layout_marginBottom="16dp"/>
 
             <customfonts.MyTextView_Montserrat_Regular
@@ -155,12 +168,17 @@
                 android:textSize="12sp"
                 android:textColor="#747474"/>
 
-            <org.angmarch.views.NiceSpinner
-                android:id="@+id/nice_spinner4"
+            <com.aviharez.tomatapp.activity.SearchableSpinner
+                android:id="@+id/spinner_manufacturer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:popupTextAlignment="start"
+                android:foreground="@drawable/rounded_trans"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
                 android:layout_marginBottom="16dp"/>
 
             <customfonts.MyTextView_Montserrat_Regular
@@ -170,12 +188,17 @@
                 android:textSize="12sp"
                 android:textColor="#747474"/>
 
-            <org.angmarch.views.NiceSpinner
-                android:id="@+id/nice_spinner5"
+            <com.aviharez.tomatapp.activity.SearchableSpinner
+                android:id="@+id/spinner_equipment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 app:popupTextAlignment="start"
+                android:foreground="@drawable/rounded_trans"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
                 android:layout_marginBottom="16dp"/>
 
             <customfonts.MyTextView_Montserrat_Regular
@@ -188,7 +211,7 @@
             <customfonts.EditText__SF_Pro_Display_Regular
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/et_deskripsi"
+                android:id="@+id/part_number"
                 android:layout_marginTop="8dp"
                 android:background="@drawable/rounded_grey"
                 android:paddingTop="8dp"

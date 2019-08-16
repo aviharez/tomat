@@ -48,7 +48,7 @@
                     android:layout_gravity="center">
 
                     <ImageView
-                        android:id="@+id/image"
+                        android:id="@+id/img_avatar"
                         android:layout_width="52dp"
                         android:layout_height="52dp"
                         android:layout_gravity="center"
@@ -57,6 +57,7 @@
                     <customfonts.TextViewSFProDisplayRegular
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/tv_mat_no"
                         android:text="4000151"
                         android:layout_gravity="center"
                         android:textSize="12.5sp"
@@ -82,7 +83,7 @@
                         android:textColor="#818181"/>
 
                     <customfonts.MyTextView_SF_Pro_Display_Medium
-                        android:id="@+id/tv_income"
+                        android:id="@+id/tv_plant"
                         android:layout_marginTop="4dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -100,6 +101,7 @@
 
                     <customfonts.MyTextView_SF_Pro_Display_Medium
                         android:layout_marginTop="4dp"
+                        android:id="@+id/tv_oldno"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="1234-56789-4321"
@@ -116,6 +118,7 @@
 
                     <customfonts.MyTextView_SF_Pro_Display_Medium
                         android:layout_marginTop="4dp"
+                        android:id="@+id/tv_desc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lorem ipsum dolot sit amet"
@@ -150,6 +153,7 @@
 
                     <customfonts.MyTextView_SF_Pro_Display_Medium
                         android:layout_marginTop="4dp"
+                        android:id="@+id/tv_uom"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="G M"
@@ -177,6 +181,7 @@
 
                     <customfonts.MyTextView_SF_Pro_Display_Medium
                         android:layout_marginTop="4dp"
+                        android:id="@+id/tv_mat_type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="V1"
@@ -199,6 +204,7 @@
 
             <customfonts.MyTextView_SF_Pro_Display_Medium
                 android:layout_marginTop="4dp"
+                android:id="@+id/tv_po_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/po_text"

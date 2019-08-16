@@ -23,13 +23,19 @@
         android:clipToPadding="false"
         android:orientation="vertical">
 
-        <ImageView
+        <com.makeramen.roundedimageview.RoundedImageView
             android:layout_gravity="center"
             xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image"
             android:layout_marginTop="32dp"
-            android:layout_width="85dp"
-            android:layout_height="95.7dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img_avatar"
+            android:scaleType="fitCenter"
+            app:riv_corner_radius="50dp"
+            app:riv_border_width="2dp"
+            app:riv_border_color="@color/colorPrimary"
+            app:riv_mutate_background="true"
+            app:riv_oval="true"
             android:src="@drawable/logo_pkc" />
 
         <customfonts.MyTextView_SF_Pro_Display_Bold
@@ -38,6 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Namanya"
+            android:id="@+id/txt_name"
             android:textColor="#3b3b3b"
             android:textSize="20sp"/>
 
@@ -47,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Keterangan"
+            android:id="@+id/txt_username"
             android:textColor="#a9a9b0"
             android:textSize="14sp"/>
 

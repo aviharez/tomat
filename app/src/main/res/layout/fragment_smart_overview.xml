@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/img_avatar"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/rounded_list"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_mat_no"
+                        android:text="4000151"
+                        android:layout_gravity="center"
+                        android:textSize="12.5sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@android:color/black"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:id="@+id/tv_tenant_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Plant"
+                        android:textSize="12sp"
+                        android:textColor="#818181"/>
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:id="@+id/tv_plant"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C601"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Old Stock Code"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#818181"/>
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/tv_oldno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234-56789-4321"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Description"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#818181"/>
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/tv_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lorem ipsum dolot sit amet"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:background="@drawable/rect_grey"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Catalog Status"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:textColor="#818181"/>
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/tv_uom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="QA"
+                        android:layout_gravity="center"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:background="@drawable/rect_grey"
+                    android:orientation="vertical">
+
+                    <customfonts.TextViewSFProDisplayRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Catalog Type"
+                        android:textSize="12sp"
+                        android:layout_gravity="center"
+                        android:textColor="#818181"/>
+
+                    <customfonts.MyTextView_SF_Pro_Display_Medium
+                        android:layout_marginTop="4dp"
+                        android:id="@+id/tv_mat_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OEM"
+                        android:layout_gravity="center"
+                        android:textColor="#3b3b3b"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <customfonts.TextViewSFProDisplayRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Long Description"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:textSize="12sp"
+                android:textColor="#818181"/>
+
+            <customfonts.MyTextView_SF_Pro_Display_Medium
+                android:layout_marginTop="4dp"
+                android:id="@+id/tv_po_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/po_text"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:background="@drawable/rect_grey"
+                android:padding="8dp"
+                android:lineSpacingExtra="2dp"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:textColor="#3b3b3b"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

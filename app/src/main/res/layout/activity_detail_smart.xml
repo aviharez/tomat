@@ -17,7 +17,14 @@
         android:textSize="24sp"
         android:id="@+id/jdl"
         android:textColor="#3b3b3b"/>
-
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/jdl"
+            android:layout_above="@id/bwh"
+            android:id="@+id/lvMaterial"/>
+    <!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -700,7 +707,7 @@
         </LinearLayout>
 
     </ScrollView>
-
+    -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -715,6 +722,7 @@
             android:layout_height="24dp"
             android:src="@drawable/ic_chevron_left_black_24dp"
             android:layout_gravity="center"
+            android:id="@+id/prev"
             android:tint="@android:color/white"
             android:background="@android:color/transparent"
             android:layout_margin="16dp"/>
@@ -724,6 +732,7 @@
             android:layout_weight="1"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
+            android:id="@+id/page_info"
             android:textAlignment="center"
             android:text="1 dari 987"
             android:textColor="@android:color/white"
@@ -732,6 +741,7 @@
         <ImageButton
             android:layout_width="24dp"
             android:layout_height="24dp"
+            android:id="@+id/next"
             android:src="@drawable/ic_chevron_right_black_24dp"
             android:layout_gravity="center"
             android:tint="@android:color/white"

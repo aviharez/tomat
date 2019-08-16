@@ -18,6 +18,14 @@
         android:id="@+id/jdl"
         android:textColor="#3b3b3b"/>
 
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/jdl"
+            android:layout_above="@id/bwh"
+            android:id="@+id/lvMaterial"/>
+    <!--
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -540,6 +548,7 @@
         </LinearLayout>
 
     </ScrollView>
+    -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -557,10 +566,12 @@
             android:layout_gravity="center"
             android:tint="@android:color/white"
             android:background="@android:color/transparent"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:id="@+id/prev"/>
 
         <customfonts.MyTextView_SF_Pro_Display_Medium
             android:layout_width="0dp"
+            android:id="@+id/page_info"
             android:layout_weight="1"
             android:layout_gravity="center"
             android:layout_height="wrap_content"
@@ -576,7 +587,8 @@
             android:layout_gravity="center"
             android:tint="@android:color/white"
             android:background="@android:color/transparent"
-            android:layout_margin="16dp"/>
+            android:layout_margin="16dp"
+            android:id="@+id/next"/>
 
     </LinearLayout>
 

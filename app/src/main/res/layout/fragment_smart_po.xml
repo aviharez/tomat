@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <customfonts.MyTextView_SF_Pro_Display_Medium
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:id="@+id/tv_po_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/po_text"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rect_grey"
+            android:padding="8dp"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textColor="#3b3b3b"
+            android:textSize="13sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+
+</RelativeLayout>

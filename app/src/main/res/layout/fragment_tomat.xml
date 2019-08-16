@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
     tools:context=".fragment.TomatFragment">
 
@@ -156,17 +157,30 @@
                 android:textSize="12sp"
                 android:textColor="#747474"/>
 
-            <Spinner
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/spinnerPlant"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="16dp">
+                app:popupTextAlignment="start"
+                android:foreground="@drawable/rounded_trans"
+                android:background="@android:color/black"
+                android:layout_marginBottom="16dp"/>
 
-            </Spinner>
+            <!--<Spinner-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:layout_marginBottom="16dp"-->
+                <!--android:foreground="@drawable/rounded_trans"-->
+                <!--android:id="@+id/spinnerPlant">-->
+
+            <!--</Spinner>-->
 
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/stockAvailability"
                 android:text="Ketersediaan Stok"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="24dp"/>
